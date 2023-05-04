@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230216 23:29:47.904" rpa="false" schemaversion="3">
+<suite id="s1" name="Testelogin" source="C:\Users\Usuário\Desktop\testelogin">
+<suite id="s1-s1" name="Chronos" source="C:\Users\Usuário\Desktop\testelogin\chronos.robot">
+<test id="s1-s1-t1" name="Chronos Test" line="15">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230216 23:29:48.675" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" starttime="20230216 23:29:48.673" endtime="20230216 23:29:52.937"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230216 23:29:52.938" endtime="20230216 23:29:53.190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Link=Log in</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230216 23:29:53.192" endtime="20230216 23:29:53.405"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Log in</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230216 23:29:53.408" level="INFO">Clicking link 'Log in'.</msg>
+<status status="PASS" starttime="20230216 23:29:53.406" endtime="20230216 23:29:53.824"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>loginusername</arg>
+<arg>Rosalia Gonçalves</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230216 23:29:53.886" level="INFO">Typing text 'Rosalia Gonçalves' into text field 'loginusername'.</msg>
+<status status="PASS" starttime="20230216 23:29:53.881" endtime="20230216 23:29:54.884"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>loginpassword</arg>
+<arg>12345</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230216 23:29:54.890" level="INFO">Typing password into text field 'loginpassword'.</msg>
+<msg timestamp="20230216 23:29:55.038" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230216 23:29:55.184" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230216 23:29:54.887" endtime="20230216 23:29:55.185"/>
+</kw>
+<status status="PASS" starttime="20230216 23:29:48.669" endtime="20230216 23:29:55.187"/>
+</test>
+<doc>Robot Framework Sem Complicação</doc>
+<status status="PASS" starttime="20230216 23:29:48.112" endtime="20230216 23:29:55.206"/>
+</suite>
+<status status="PASS" starttime="20230216 23:29:47.917" endtime="20230216 23:29:55.216"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testelogin">Testelogin</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Chronos">Testelogin.Chronos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
